@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/welcome"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Welcome, "
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/unamePlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <Button
+            android:id="@+id/toOrderPageBtn"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Food"
+            android:backgroundTint="@color/red"/>
+
+        <Button
+            android:id="@+id/toProfileBtn"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/grey"/>
+
+        <Button
+            android:id="@+id/toLoginBackBtn"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/cardview_dark_background"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

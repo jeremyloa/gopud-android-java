@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/titleProfile"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Profile Page"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/titleProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:textStyle="bold"
+            android:text="Username"/>
+
+        <TextView
+            android:id="@+id/viewUname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+            android:text="abc"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:textStyle="bold"
+            android:text="E-mail"/>
+
+        <TextView
+            android:id="@+id/viewMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+            android:text="abc"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:textStyle="bold"
+            android:text="Phone"/>
+
+        <TextView
+            android:id="@+id/viewPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+            android:text="abc"/>
+
+        <Button
+            android:id="@+id/toMainBackBtn"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Home"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/grey"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
